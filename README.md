@@ -103,6 +103,12 @@ http://localhost:3000/
 
 ---
 
+## Assumptions
+- External APIs are mocked
+- Token stored in-memory for simplicity
+
+---
+
 ## Future Improvements
 
 - Add more carriers (FedEx, DHL)  

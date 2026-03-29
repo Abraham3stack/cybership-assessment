@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { rateRequestSchema } from "../utils/validation";
 import { RateService } from "../services/rate.service";
+import { success } from "zod";
 
 export const getRates = async (req: Request, res: Response): Promise<void> => {
   try {
@@ -14,6 +15,7 @@ export const getRates = async (req: Request, res: Response): Promise<void> => {
     });
   } catch (error: any) {
     res.status(400).json({
+      success: false,
       error: error?.issues || "Invalid request",
     });
   }

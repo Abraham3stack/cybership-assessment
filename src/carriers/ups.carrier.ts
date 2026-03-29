@@ -8,7 +8,7 @@ export class UPSCarrier implements Carrier {
     try {
       const token = await authService.getToken();
 
-      console.log("Using token", token);
+      console.log("[UPS] Using token", token);
 
       const shouldFail = Math.random() < 0.3;
 
