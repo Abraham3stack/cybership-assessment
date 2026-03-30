@@ -120,4 +120,24 @@ http://localhost:3000/
 
 ## Author
 
-Abraham Ogbu
+
+---
+
+## Sample Execution (Screenshots)
+
+These examples demonstrate both successful execution and robust error handling in the service.
+
+### 1. Successful Rate Response
+Demonstrates a valid request returning normalized shipping rates from the mocked UPS carrier.
+
+![Successful Response](image.png)
+
+### 2. Validation Error Handling
+Shows how invalid input is properly caught and returned with a structured error response while maintaining system stability.
+
+![Error Handling](image-1.png)
+
+### 3. Terminal Logs
+Illustrates internal service behavior including token usage and request processing, demonstrating mocked authentication and flow execution.
+
+![Terminal Logs](image-2.png)
